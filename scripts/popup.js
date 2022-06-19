@@ -39,4 +39,5 @@ document.getElementById('start-chat-form')
             type: "open_wame_link",
             href: 'https://wa.me/' + cc + phone,
         });
+        window.close();
     });

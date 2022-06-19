@@ -7,7 +7,6 @@ module.exports = {
         clickjack: './scripts/clickjack.js',
         popup: './scripts/popup.js',
         worker: './scripts/worker.js',
-        wweb: './scripts/wweb.js',
     },
     optimization: {
         minimizer: [new UglifyJsPlugin()],

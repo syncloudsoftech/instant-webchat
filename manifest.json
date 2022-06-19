@@ -7,10 +7,6 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://web.whatsapp.com/*"],
-      "js": ["scripts/wweb.min.js"]
-    },
-    {
       "matches": [
         "http://*/*",
         "https://*/*"
