@@ -1,0 +1,14 @@
+html {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px !important;
+    padding: 0 !important;
+}
+
+.pure-form-message-error {
+    color: rgb(202, 60, 60);
+}

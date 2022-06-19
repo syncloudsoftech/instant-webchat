@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <title>wa.me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/styles/popup.css">
+</head>
+<body>
+<p>Enter the country code and phone number below to start chat.</p>
+<form class="pure-form pure-form-stacked" id="start-chat-form">
+    <fieldset>
+        <label for="start-chat-cc">Country code:</label>
+        <input id="start-chat-cc" min="1" name="cc" pattern="\d{1,5}" required type="text">
+        <label for="start-chat-phone">Phone number:</label>
+        <input autocomplete="off" id="start-chat-phone" name="phone" pattern="\d{7,14}" required type="text">
+        <button type="submit" class="pure-button pure-button-primary">Start chat</button>
+    </fieldset>
+</form>
+<p>If this extension is useful to you, please <a href="https://syncloudsoft.com" target="_blank">visit our website</a> or <a href="https://g.page/r/Cdzb8wl3eeifEB0/review" target="_blank">review us</a>.</p>
+<script src="/scripts/popup.min.js"></script>
+</body>
+</html>

@@ -1,4 +1,7 @@
 {
+  "action": {
+    "default_popup": "popup.html"
+  },
   "background": {
     "service_worker": "scripts/worker.min.js"
   },
@@ -32,6 +35,7 @@
   "permissions": [
     "activeTab",
     "scripting",
+    "storage",
     "tabs"
   ],
   "version": "1.0"

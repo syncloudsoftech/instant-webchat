@@ -1222,6 +1222,18 @@ watchpack@^2.3.1:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
+webext-detect-page@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/webext-detect-page/-/webext-detect-page-4.0.1.tgz#124a6802c872fa0bc12549d99b2dd53d18af2ba7"
+  integrity sha512-Y9Skw6/Uj0dGwOIidc1XqZ3neEbmuuT4BlkL/J4JHAo6fVznHIZq6/MWDsPGOA/jnNowiSXtHHh4S/TOxbl6bQ==
+
+webext-options-sync@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/webext-options-sync/-/webext-options-sync-3.1.0.tgz#030c4c367cfd8e939da2be262346cb49594e3fe6"
+  integrity sha512-oQAx6V8V4lkGv51KBcUsvBnckwT+T/EkgCxpOKd9K9syc0eJuwfIYooa5Gcrv+uMQtdhf4wjZ9glJQRiNIQGVg==
+  dependencies:
+    webext-detect-page "^4.0.0"
+
 webextension-polyfill@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/webextension-polyfill/-/webextension-polyfill-0.9.0.tgz#de6c1941d0ef1b0858b20e9c7b46bbc042c5a960"
