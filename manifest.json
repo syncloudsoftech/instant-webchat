@@ -1,0 +1,38 @@
+{
+  "background": {
+    "service_worker": "scripts/worker.min.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "js": ["scripts/wweb.min.js"]
+    },
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": ["*://web.whatsapp.com/*"],
+      "js": ["scripts/clickjack.min.js"]
+    }
+  ],
+  "description": "Open wa.me links in active WhatsApp web session.",
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "manifest_version": 3,
+  "name": "wa.me",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "version": "1.0"
+}

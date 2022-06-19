@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webextension-polyfill": "^0.9.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "build": "webpack --mode production --progress",
+    "watch": "npm run build -- --mode development --watch"
+  }
+}
