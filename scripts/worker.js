@@ -21,12 +21,22 @@ browser.runtime.onMessage.addListener(function ({ type, href }) {
     browser.tabs.query({ url: "*://web.whatsapp.com/*" })
         .then(function ([tab]) {
             if (!!tab) {
-                browser.tabs.update(tab.id, { active: true });
-                browser.scripting.executeScript({
-                    target: { tabId: tab.id },
-                    func: startChat,
-                    args: [href],
-                });
+                if (tab.active) {
+                    browser.scripting.executeScript({
+                        target: { tabId: tab.id },
+                        func: startChat,
+                        args: [href],
+                    });
+                } else {
+                    browser.tabs.update(tab.id, { active: true })
+                        .then(function () {
+                            browser.scripting.executeScript({
+                                target: { tabId: tab.id },
+                                func: startChat,
+                                args: [href],
+                            });
+                        });
+                }
             } else {
                 browser.tabs.create({
                     active: true,
