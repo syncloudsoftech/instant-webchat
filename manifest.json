@@ -15,7 +15,7 @@
       "js": ["scripts/clickjack.min.js"]
     }
   ],
-  "description": "Open wa.me links in active WhatsApp web session.",
+  "description": "Browser extension to start chat on WhatsApp without saving phone number.",
   "host_permissions": [
     "http://*/",
     "https://*/"
@@ -27,7 +27,7 @@
     "128": "icon128.png"
   },
   "manifest_version": 3,
-  "name": "wa.me",
+  "name": "Instant WebChat",
   "permissions": [
     "activeTab",
     "scripting",
