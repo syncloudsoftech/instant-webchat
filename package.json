@@ -10,7 +10,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode production --progress",
-    "package": "web-ext build",
+    "package": "web-ext build --ignore-files \"**/*.js\" \"**/*.js.map\" \"!**/*.min.js\" \"package.json\" \"yarn.lock\" \"LICENSE\" \"README.md\" --overwrite-dest",
     "watch": "npm run build -- --mode development --watch"
   }
 }
