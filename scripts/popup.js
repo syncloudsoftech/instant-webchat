@@ -44,3 +44,7 @@ document.getElementById('start-chat-form')
                 window.close();
             });
     });
+
+window.addEventListener('load', function () {
+    browser.runtime.sendMessage({ type: "wake_service_worker" });
+});
