@@ -33,11 +33,14 @@ document.getElementById('start-chat-phone')
 document.getElementById('start-chat-form')
     .addEventListener('submit', function (e) {
         e.preventDefault();
-        const cc = document.getElementById('start-chat-cc').value;
-        const phone = document.getElementById('start-chat-phone').value;
+        const countryCode = document.getElementById('start-chat-cc').value;
+        const phoneNumber = document.getElementById('start-chat-phone').value;
         browser.runtime.sendMessage({
             type: "open_wame_link",
-            href: 'https://wa.me/' + cc + phone,
+            href: 'https://wa.me/' + countryCode + phoneNumber,
         });
-        window.close();
+        options.setAll({ countryCode, phoneNumber })
+            .then(function () {
+                window.close();
+            });
     });
